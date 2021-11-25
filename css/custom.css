@@ -1,0 +1,45 @@
+body {
+    padding-top: 56px;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.lnr {
+    display: inline-block;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.05em;
+    stroke-width: 1;
+}
+
+.services-icon {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.quote-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cust_center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cust_button_size {
+    width: 120px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.card:hover {
+    transition: 0.2s;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5)!important;
+    transform: scale(1.05);
+}

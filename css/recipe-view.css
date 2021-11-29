@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.nutritional {
+    padding: 10px;
+    background: rgb(198, 240, 253);
+    width: 80px;
+    height: 70px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.cust_center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+/* Left column */
+
+.leftcolumn {
+    float: left;
+    width: 70%;
+    margin-top: 40px;
+}
+
+
+/* Right column */
+
+.rightcolumn {
+    float: left;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+
+/* Fake image */
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+
+.card-recipe {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.recipe-text1 {
+    text-align: center;
+    padding: 80px 0;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}

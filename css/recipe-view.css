@@ -23,6 +23,12 @@ body {
     margin-right: auto;
 }
 
+.switchbutton {
+    border-radius: 25px;
+    width: 175px;
+    text-align: center;
+}
+
 
 /* Create two unequal columns that floats next to each other */
 

@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Brownie</title>
-    <meta name="description" content="">
+    <title>Triple chocolate & peanut butter layer cake</title>
+    <meta name="description" content="Make a showstopping cake this Easter. Top chocolate sponge with peanut butter frosting, ganache drip, pretzel bark and chocolate eggs for a divine dessert">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
@@ -108,7 +108,8 @@
 
             <div class="card-recipe">
                 <h2>Ingredient List</h2>
-                <div class="row">
+                <button id="grams-ounces" class="switchbutton" type="button" onclick="switchIngredients()">Switch to Ounces</button>
+                <div class="row" id="grams">
                     <div class="column">
                         <ul>
                             <li class="lead">225ml rapeseed oil, plus more for the tins</li>
@@ -148,6 +149,46 @@
                         </ul>
                     </div>
                 </div>
+                <div class="row" id="ounces">
+                    <div class="column">
+                        <ul>
+                            <li class="lead">225ml rapeseed oil, plus more for the tins</li>
+                            <li class="lead">8.8oz self-raising flour</li>
+                            <li class="lead">4 tbsp cocoa</li>
+                            <li class="lead">1 ½ tsp bicarbonate of soda</li>
+                            <li class="lead">8oz caster sugar</li>
+                            <li class="lead">3 tbsp golden syrup</li>
+                            <li class="lead">3 large eggs, beaten</li>
+                            <li class="lead">225ml milk</li>
+                        </ul>
+                        <h4>For the pretzel bark</h4>
+                        <ul>
+                            <li class="lead">7oz dark chocolate, chopped</li>
+                            <li class="lead">2 tbsp chocolate chips</li>
+                            <li class="lead">small handful pretzel pieces</li>
+                            <li class="lead">2 tbsp honeycomb pieces</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>For the icing</h4>
+                        <ul>
+                            <li class="lead">2.3oz dark chocolate</li>
+                            <li class="lead">8.8oz soft salted butter</li>
+                            <li class="lead">17.6oz icing sugar</li>
+                            <li class="lead">8.6oz smooth peanut butters</li>
+                            <li class="lead">1-2 tbsp cocoa</li>
+                        </ul>
+                        <h4>For the ganache drip</h4>
+                        <ul>
+                            <li class="lead">200ml double cream</li>
+                            <li class="lead">3.5oz dark chocolate, finely chopped</li>
+                        </ul>
+                        <h4>For the decoration</h4>
+                        <ul>
+                            <li class="lead">chocolate eggs, some hollow, some filled, gold lustre, toffee popcorn and pretzels</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -158,7 +199,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script>
+        var grams = true;
+        document.getElementById("grams").style.display = "block"
+        document.getElementById("ounces").style.display = "none"
 
+        function switchIngredients() {
+            if (grams === true) {
+                document.getElementById("grams").style.display = "none"
+                document.getElementById("ounces").style.display = "block"
+                document.getElementById("grams-ounces").innerHTML = "Switch to Grams"
+                grams = false;
+            } else {
+                document.getElementById("grams").style.display = "block"
+                document.getElementById("ounces").style.display = "none"
+                document.getElementById("grams-ounces").innerHTML = "Switch to Ounces"
+                grams = true;
+            }
+        }
+    </script>
 </body>
 
 

@@ -24,9 +24,9 @@ body {
 }
 
 .switchbutton {
-    border-radius: 25px;
-    width: 175px;
-    text-align: center;
+    width: 150px;
+    height: 90%;
+    text-align: center !important;
 }
 
 

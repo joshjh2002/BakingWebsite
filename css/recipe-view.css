@@ -100,3 +100,17 @@ div.recipe-text1 {
         padding: 0;
     }
 }
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+/*border: 1px solid black;*/
+
+th,
+td {
+    text-align: center;
+    height: 30px;
+}

@@ -28,6 +28,7 @@ section {
 
 .cust_center {
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
 }

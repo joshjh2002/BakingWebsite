@@ -1,10 +1,11 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 body {
     padding: 10px;
     background: #f1f1f1;
+    width: 99.69%;
 }
 
 .nutritional {
@@ -15,12 +16,6 @@ body {
     margin: 10px;
     text-align: center;
     border-radius: 5px;
-}
-
-.cust_center {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .switchbutton {
@@ -37,7 +32,7 @@ body {
 
 .leftcolumn {
     float: left;
-    width: 70%;
+    width: 65%;
     margin-top: 40px;
 }
 
@@ -46,7 +41,7 @@ body {
 
 .rightcolumn {
     float: left;
-    width: 30%;
+    width: 35%;
     background-color: #f1f1f1;
     padding-left: 20px;
     margin-top: 40px;
@@ -74,6 +69,7 @@ body {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+    border-radius: 15px;
 }
 
 
@@ -90,6 +86,44 @@ div.recipe-text1 {
     padding: 80px 0;
 }
 
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: center;
+    height: 30px;
+}
+
+strong {
+    color: rgb(130, 210, 210);
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.lead {
+    border-bottom: 1px dashed #777;
+}
+
+.step {
+    padding: 10px;
+    border: 1px ridge #777;
+    border-radius: 10px;
+}
+
+.contentdiv {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
@@ -99,18 +133,4 @@ div.recipe-text1 {
         width: 100%;
         padding: 0;
     }
-}
-
-table {
-    table-layout: fixed;
-    width: 100%;
-}
-
-
-/*border: 1px solid black;*/
-
-th,
-td {
-    text-align: center;
-    height: 30px;
 }
